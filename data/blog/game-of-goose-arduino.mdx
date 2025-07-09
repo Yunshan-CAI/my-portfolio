@@ -1,0 +1,41 @@
+---
+title: 'Game of the Goose'
+date: '2024-01-21'
+tags: ['arduino', 'physical-computing']
+draft: false
+summary: 'A large-scale interactive board game implementation using Arduino, LED strips, LDR sensors, and sound effects to create a physical gaming experience.'
+authors: ['default']
+---
+
+**[🔗 View Project Demo Video →](https://youtu.be/Qoaznm9Rup4)**
+
+## Project Overview
+
+The Game of the Goose (Ganzenbord) is a classic Dutch board game where players race to reach the final tile by rolling dice. We reimagined this traditional game as a large-scale interactive experience where real people serve as the game pieces, walking on a physical board equipped with sensors and LED lighting.
+
+![](/static/images/goose-game.png)
+_For those non-Dutchies (as me), this is what the original ganzenbord looks like._
+
+## Implementation
+
+### **Gameplay Experience**
+
+1. **Turn Taking**: Players roll a physical die and move the corresponding number of tiles
+2. **Action Triggers**: When stepping on special tiles, LEDs immediately light up to show where to go
+3. **Audio Feedback**: Each action is accompanied by thematic sound effects
+4. **Multi-player**: Multiple players can be on the board simultaneously
+
+### **Hardware Setup**
+
+- **Arduino Uno**: Controls the entire system
+- **LED Strips**: WS2812B addressable LEDs around each action tile
+- **Sensors**: Light sensors (LDRs) under action tiles detect when players step on them
+- **Sound**: Piezo buzzer for audio effects
+- **Power**: External 5V supply for LED strips
+
+### **How It Works**
+
+1. **Detection**: When a player steps on an action tile, it blocks light from reaching the sensor underneath
+2. **Processing**: Arduino reads the sensor change and determines which action to trigger
+3. **Response**: LED strips light up around the destination tile while playing appropriate sounds
+4. **Reset**: System waits for player to move, then resets for the next action
