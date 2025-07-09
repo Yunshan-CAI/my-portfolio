@@ -1,6 +1,6 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Alicia Cai',
+  title: '',
   author: 'Alicia Cai',
   headerTitle: 'Alicia Cai',
   description: '',

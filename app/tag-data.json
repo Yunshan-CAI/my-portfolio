@@ -1,13 +1,13 @@
 {
-  "animal-psychology": 1,
-  "creative-coding": 1,
+  "ai-supervision": 1,
+  "machine-learning": 1,
+  "computer-vision": 1,
   "game-design": 1,
   "processing": 1,
   "social-robotics": 1,
+  "animal-psychology": 1,
   "arduino": 1,
   "physical-computing": 1,
-  "web-development": 1,
-  "ai-supervision": 1,
-  "machine-learning": 1,
-  "computer-vision": 1
+  "creative-coding": 1,
+  "web-development": 1
 }
