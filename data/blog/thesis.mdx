@@ -1,20 +1,41 @@
 ---
-title: 'Supervised by the Machine: Evaluating AI as Supervisor Through a Nail Biting Detection Study (On progress)'
+title: 'Supervised by the Machine: Evaluating AI as Supervisor Through a Nail Biting Detection Study'
 date: '2025-08-20'
 tags: ['ai-supervision', 'machine-learning', 'computer-vision']
 draft: false
-summary: 'A research experiment where Generative AI serves as my official thesis supervisor, evaluating AI capabilities through a nail biting detection case study.'
+summary: 'My MSc thesis explores AI as a thesis supervisor, evaluated through a nail biting detection case study in computer vision.'
 authors: ['default']
 ---
 
-## Project Concept
+**[🔗 Read University Leiden News Coverage →](https://www.universiteitleiden.nl/en/news/2025/08/experiment-leiden-university-student-writes-thesis-with-just-ai-tools-for-supervision-education)**  
+**[🔗 Read NRC Nederland Feature →](https://www.nrc.nl/nieuws/2025/08/22/een-chatbot-als-scriptiebegeleider-een-leidse-student-deed-onderzoek-naar-nagelbijten-en-probeerde-het-uit-a4903792)**
 
-This Media Technology MSc thesis investigates two interconnected research questions: **To what extent can AI fulfill the key responsibilities of a thesis supervisor**, and what are its strengths and limitations? Additionally, **how effectively can computer vision techniques detect nail biting behavior** through different computational approaches? With GenAI serving as my official secondary supervisor, this research explores whether AI can effectively guide graduate-level technical projects.
+## Project Overview
 
-The methodology employs Lee (2008)'s academic supervision framework to evaluate AI performance across five key dimensions: functional guidance, academic enculturation, critical thinking support, emotional assistance, and technical implementation.
+This MSc thesis investigates two interconnected questions:
 
-A nail biting detection project serves as the technical case study, where I develop and compare multiple computer vision approaches while documenting every AI interaction through structured logbooks. This dual-layer research design allows for systematic evaluation of AI supervision capabilities while producing concrete technical outcomes that demonstrate the practical effectiveness of machine-guided research.
+1. **To what extent can AI fulfill the key responsibilities of a thesis supervisor?**
+2. **How effectively can computer vision techniques detect nail biting behavior?**
 
-Reference: Lee, A. (2008). How are doctoral students supervised? Concepts of doctoral research
-supervision. Studies in Higher Education, 33(3), 267–281.
-https://doi.org/10.1080/03075070802049202
+The project adopts a dual-layer design: AI supervision is evaluated using Lee’s (2008) five-dimension framework, while a nail biting detection system serves as the technical case study.
+
+## Implementation
+
+### **AI Supervision Layer**
+
+- AI (ChatGPT & Claude) acted as my secondary supervisor throughout the thesis.
+- Tasks included academic guidance, methodology feedback, technical debugging, and emotional support.
+- All interactions were documented and analyzed against Lee’s framework.
+
+### **Nail Biting Detection Layer**
+
+- **Dataset**: 5,000+ annotated hand images from _11k Hands_ and web sources.
+- **Approach**: Transfer learning on CNNs (ResNet34, MobileNet) using **fastai, PyTorch, OpenCV**.
+- **Techniques**: Image augmentation, fine-tuning, class rebalancing.
+- **Result**: Achieved >90% classification accuracy in distinguishing bitten vs. non-bitten nails.
+
+## Key Contribution
+
+This thesis demonstrates that AI can play a meaningful role in graduate-level supervision, while also delivering a working prototype for behavioral monitoring through computer vision.
+
+---

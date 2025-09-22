@@ -1,8 +1,8 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Alicia Cai',
-  author: 'Alicia Cai',
-  headerTitle: 'Alicia Cai',
+  title: 'Yunshan Cai',
+  author: 'Yunshan Cai',
+  headerTitle: 'Yunshan Cai',
   description: '',
   language: 'en-us',
   theme: 'light', // system, dark or light
