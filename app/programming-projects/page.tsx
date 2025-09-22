@@ -4,36 +4,71 @@ export const metadata = genPageMetadata({ title: 'Programming Projects' })
 
 export default function ProgrammingProjects() {
   return (
-    <div>
-      <h1>Programming Projects</h1>
+    <div className="divide-y divide-gray-200 dark:divide-gray-700">
+      <div className="space-y-2 pb-4 md:space-y-4">
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100">
+          Programming Projects
+        </h1>
+      </div>
 
-      <div>
-        <div>
-          <h2>QuickBite Delivery 🍽️</h2>
-          <p>
-            A restaurant delivery platform backend built with Spring Boot. Features comprehensive
-            backstage management for dishes, categories, and orders, with Redis caching for improved
-            performance and transactional operations for data integrity.
-          </p>
-          <p>Technologies: Spring Boot, MyBatis-Plus, Redis, Spring Cache, MySQL</p>
-          <a href="https://github.com/Yunshan-CAI/QuickBite_Delivery" target="_blank">
-            View on GitHub
-          </a>
-        </div>
+      <div className="container py-6">
+        <div className="space-y-8">
+          <div className="border-b border-gray-200 pb-8 dark:border-gray-700">
+            <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-gray-100">
+              QuickBite Delivery 🍽️
+            </h2>
+            <p className="mb-4 text-gray-600 dark:text-gray-300">
+              A restaurant delivery platform backend built with Spring Boot. Features comprehensive
+              backstage management for dishes, categories, and orders, with Redis caching for
+              improved performance and transactional operations for data integrity.
+            </p>
+            <div className="mb-4 flex flex-wrap gap-2">
+              <span className="rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800 dark:bg-blue-900 dark:text-blue-200">
+                Spring Boot
+              </span>
+              <span className="rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800 dark:bg-blue-900 dark:text-blue-200">
+                MyBatis-Plus
+              </span>
+              <span className="rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800 dark:bg-blue-900 dark:text-blue-200">
+                Redis
+              </span>
+            </div>
+            <a
+              href="https://github.com/Yunshan-CAI/QuickBite_Delivery"
+              target="_blank"
+              className="font-medium text-blue-600 hover:text-blue-800"
+            >
+              View on GitHub
+            </a>
+          </div>
 
-        <br />
-
-        <div>
-          <h2>Secret Whisper 🕵️‍♂️🔐</h2>
-          <p>
-            A web application that allows users to share and manage their secrets. Features dual
-            authentication (username/password and Google OAuth2), secure password hashing with
-            bcrypt, and PostgreSQL database for data storage.
-          </p>
-          <p>Technologies: Node.js, Express.js, EJS, PostgreSQL, Passport.js, OAuth2</p>
-          <a href="https://github.com/Yunshan-CAI/Secret-Whisper" target="_blank">
-            View on GitHub
-          </a>
+          <div className="border-b border-gray-200 pb-8 dark:border-gray-700">
+            <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-gray-100">
+              Secret Whisper 🕵️‍♂️🔐
+            </h2>
+            <p className="mb-4 text-gray-600 dark:text-gray-300">
+              A web application that allows users to share and manage their secrets. Features dual
+              authentication with username/password and Google OAuth2.
+            </p>
+            <div className="mb-4 flex flex-wrap gap-2">
+              <span className="rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800 dark:bg-blue-900 dark:text-blue-200">
+                Node.js
+              </span>
+              <span className="rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800 dark:bg-blue-900 dark:text-blue-200">
+                Express.js
+              </span>
+              <span className="rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800 dark:bg-blue-900 dark:text-blue-200">
+                PostgreSQL
+              </span>
+            </div>
+            <a
+              href="https://github.com/Yunshan-CAI/Secret-Whisper"
+              target="_blank"
+              className="font-medium text-blue-600 hover:text-blue-800"
+            >
+              View on GitHub
+            </a>
+          </div>
         </div>
       </div>
     </div>
