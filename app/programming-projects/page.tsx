@@ -2,50 +2,38 @@ import { genPageMetadata } from 'app/seo'
 
 export const metadata = genPageMetadata({ title: 'Programming Projects' })
 
-const programmingProjectsData = [
-  {
-    title: 'Personal Website',
-    description: 'This website built with Next.js and Tailwind CSS.',
-    technologies: ['Next.js', 'Tailwind CSS', 'React'],
-  },
-  {
-    title: 'Example Project',
-    description: 'A placeholder for future programming projects.',
-    technologies: ['Coming Soon'],
-  },
-]
-
 export default function ProgrammingProjects() {
   return (
-    <div className="divide-y divide-gray-200 dark:divide-gray-700">
-      <div className="space-y-2 pb-4 md:space-y-4">
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100">
-          Programming Projects
-        </h1>
-      </div>
+    <div>
+      <h1>Programming Projects</h1>
 
-      <div className="container py-6">
-        <div className="space-y-8">
-          {programmingProjectsData.map((project, index) => (
-            <div key={index} className="border-b border-gray-200 pb-8 dark:border-gray-700">
-              <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-gray-100">
-                {project.title}
-              </h2>
+      <div>
+        <div>
+          <h2>QuickBite Delivery 🍽️</h2>
+          <p>
+            A restaurant delivery platform backend built with Spring Boot. Features comprehensive
+            backstage management for dishes, categories, and orders, with Redis caching for improved
+            performance and transactional operations for data integrity.
+          </p>
+          <p>Technologies: Spring Boot, MyBatis-Plus, Redis, Spring Cache, MySQL</p>
+          <a href="https://github.com/Yunshan-CAI/QuickBite_Delivery" target="_blank">
+            View on GitHub
+          </a>
+        </div>
 
-              <p className="mb-4 text-gray-600 dark:text-gray-300">{project.description}</p>
+        <br />
 
-              <div className="flex flex-wrap gap-2">
-                {project.technologies.map((tech, techIndex) => (
-                  <span
-                    key={techIndex}
-                    className="rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-800 dark:bg-blue-900 dark:text-blue-200"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
-          ))}
+        <div>
+          <h2>Secret Whisper 🕵️‍♂️🔐</h2>
+          <p>
+            A web application that allows users to share and manage their secrets. Features dual
+            authentication (username/password and Google OAuth2), secure password hashing with
+            bcrypt, and PostgreSQL database for data storage.
+          </p>
+          <p>Technologies: Node.js, Express.js, EJS, PostgreSQL, Passport.js, OAuth2</p>
+          <a href="https://github.com/Yunshan-CAI/Secret-Whisper" target="_blank">
+            View on GitHub
+          </a>
         </div>
       </div>
     </div>
